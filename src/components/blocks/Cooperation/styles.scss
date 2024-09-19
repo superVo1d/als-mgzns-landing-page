@@ -1,0 +1,57 @@
+.cooperation-block {
+  margin: 21.4rem 0;
+
+  > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: var(--mgzns-max-container);
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+
+    @media (max-width: 1340px) {
+      flex-direction: column;
+      text-align: center;
+      padding: 0 3.2rem;
+    }
+
+    > * {
+      flex-basis: 50%;
+    }
+
+    .button {
+      flex-grow: 1;
+    }
+
+    h2 {
+      position: relative;
+      z-index: 1;
+    }
+
+    h2::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      background: url('data:image/svg+xml,<svg width="1555" height="1530" viewBox="0 0 1555 1530" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.3"><g style="mix-blend-mode:plus-lighter" filter="url(%23filter0_f_6204_973)"><ellipse cx="268.267" cy="195.888" rx="268.267" ry="195.888" transform="matrix(0.942614 -0.333883 0.290774 0.956792 585 799.141)" fill="%230072FF"/></g><g style="mix-blend-mode:plus-lighter" filter="url(%23filter1_f_6204_973)"><ellipse cx="268.267" cy="195.888" rx="268.267" ry="195.888" transform="matrix(0.942614 -0.333883 0.290774 0.956792 455 510.141)" fill="%23EB3636"/></g><g style="mix-blend-mode:plus-lighter" filter="url(%23filter2_f_6204_973)"><ellipse cx="248.712" cy="181.608" rx="248.712" ry="181.608" transform="matrix(0.942614 -0.333883 0.290774 0.956792 354 846.082)" fill="%23FF0293"/></g></g><defs><filter id="filter0_f_6204_973" x="235.567" y="289.219" width="1318.53" height="1215.55" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="200" result="effect1_foregroundBlur_6204_973"/></filter><filter id="filter1_f_6204_973" x="105.567" y="0.21875" width="1318.53" height="1215.55" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="200" result="effect1_foregroundBlur_6204_973"/></filter><filter id="filter2_f_6204_973" x="0.880859" y="344.174" width="1280.73" height="1185.26" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="200" result="effect1_foregroundBlur_6204_973"/></filter></defs></svg>');
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      width: 86rem;
+      height: 86rem;
+      transform: translate3d(-50%, -50%, 0) scale(1.5);
+      z-index: -1;
+    }
+
+    .button {
+      position: relative;
+      z-index: 1;
+
+      @media (max-width: 1340px) {
+        width: 100%;
+        max-width: 32.5rem;
+      }
+    }
+  }
+}

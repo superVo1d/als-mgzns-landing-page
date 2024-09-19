@@ -1,0 +1,37 @@
+.header {
+  > div {
+    display: flex;
+    align-items: center;
+    width: var(--mgzns-max-container);
+    max-width: 100%;
+    margin: 4.5rem auto;
+    justify-content: space-between;
+  }
+
+  nav {
+    margin: 0 4.2rem;
+    margin-left: auto;
+  }
+
+  ul,
+  li {
+    padding: 0;
+    list-style: none;
+  }
+
+  ul {
+    display: flex;
+    gap: 5.2rem;
+  }
+
+  @media (max-width: 1340px) {
+    nav,
+    .button {
+      display: none;
+    }
+
+    > div {
+      justify-content: center;
+    }
+  }
+}

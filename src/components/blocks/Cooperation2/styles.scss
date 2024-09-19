@@ -1,0 +1,43 @@
+.cooperation-2-block {
+  margin-top: 19.7rem;
+  border-radius: 15rem;
+  background: #fff;
+  padding-top: 11rem;
+  padding-bottom: 14.6rem;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  color: #000;
+
+  > div {
+    @media (max-width: 1340px) {
+      padding: 3.2rem;
+    }
+  }
+
+  a {
+    color: #0072ff;
+    text-decoration: underline;
+
+    @media (max-width: 1340px) {
+      font-size: 3rem;
+    }
+  }
+
+  .button {
+    color: #fff;
+
+    @media (max-width: 1340px) {
+      padding: 2.3rem;
+      max-width: 32rem;
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 1340px) {
+    border-radius: 4rem;
+    margin-top: 8.4rem;
+    padding-top: 8.6rem;
+    padding-bottom: 12.1rem;
+  }
+}

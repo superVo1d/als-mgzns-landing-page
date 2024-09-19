@@ -1,0 +1,148 @@
+@font-face {
+  font-family: "ALS Artemius Sans";
+  src: url("./assets/fonts/ALS_Artemius sans_Regular_1.0.otf")
+    format("opentype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "ALS Artemius Sans";
+  src: url("assets/fonts/ALS_Artemius sans_Light_1.0.otf") format("opentype");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "ALS Artemius Sans";
+  src: url("./assets/fonts/ALS_Artemius sans_Light Italic_1.0.otf")
+    format("opentype");
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "ALS Artemius Sans";
+  src: url("./assets/fonts/ALS_Artemius sans_Bold_1.0.otf") format("opentype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "ALS Artemius Sans";
+  src: url("./assets/fonts/ALS_Artemius sans_Italic_1.0.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "ALS Artemius Sans";
+  src: url("./assets/fonts/ALS_Artemius sans_Bold Italic_1.0.otf")
+    format("opentype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "ALS Artemius Sans";
+  src: url("assets/fonts/ALS_Artemius sans_Black_1.0.otf") format("opentype");
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "ALS Artemius Sans";
+  src: url("./assets/fonts/ALS_Artemius sans_Black Italic_1.0.otf")
+    format("opentype");
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* You can apply these fonts to any elements in your CSS like so: */
+body {
+  font-family: "ALS Artemius Sans", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  --mgzns-max-container: 133.1rem;
+
+  -webkit-overflow-scrolling: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #000;
+  color: #fff;
+  font-size: 2rem;
+  line-height: 134%;
+
+  @media (max-width: 1340px) {
+    --mgzns-max-container: 39rem;
+
+    font-size: 1.4rem;
+  }
+}
+
+html {
+  font-size: 62.5%;
+  text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  scroll-behavior: smooth;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1 {
+  margin: 0;
+}
+
+.text-h1 {
+  font-size: 7rem;
+  font-weight: 400;
+  line-height: 102%;
+
+  + p {
+    margin-top: 4rem;
+  }
+
+  @media (max-width: 1340px) {
+    font-size: 4rem;
+  }
+}
+
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.mobile {
+  display: none !important;
+}
+
+.desktop {
+  display: block;
+}
+
+@media (max-width: 1340px) {
+  .mobile {
+    display: block !important;
+  }
+
+  .desktop {
+    display: none !important;
+  }
+}
+
+.App {
+  overflow: clip;
+}

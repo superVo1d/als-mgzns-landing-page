@@ -1,0 +1,97 @@
+.faq-block {
+  $selector: &;
+  width: var(--mgzns-max-container);
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 7rem;
+  margin-top: 18.8rem;
+
+  @media (max-width: 1340px) {
+    margin-top: 7rem;
+    padding: 0 3.2rem;
+  }
+
+  .text-h1 {
+    margin-bottom: 9rem;
+  }
+
+  &__answer {
+    display: none;
+    padding: 4.7rem;
+    padding-top: 6.2rem;
+    padding-bottom: 6.9rem;
+
+    @media (max-width: 1340px) {
+      border-radius: 1.5rem;
+      padding: 2rem;
+      padding-top: 2.7rem;
+      padding-bottom: 3.2rem;
+    }
+  }
+
+  &__question {
+    display: flex;
+    cursor: pointer;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5rem 2.7rem;
+
+    @media (max-width: 1340px) {
+      border-color: rgba(217, 217, 217, 0.15);
+      border-radius: 0.5rem;
+      border-width: 1px;
+      padding: 1.5rem;
+    }
+  }
+
+  &__question .icon {
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none"><path d="M18.5858 28.4143C19.3668 29.1954 20.6332 29.1954 21.4142 28.4143L34.1421 15.6864C34.9232 14.9053 34.9232 13.639 34.1421 12.858C33.3611 12.0769 32.0948 12.0769 31.3137 12.858L20 24.1717L8.68629 12.858C7.90524 12.0769 6.63891 12.0769 5.85786 12.858C5.07682 13.639 5.07682 14.9053 5.85786 15.6864L18.5858 28.4143ZM18 27V27.0001H22V27H18Z" fill="white"/></svg>');
+    width: 4rem;
+    height: 4rem;
+    flex-shrink: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    @media (max-width: 1340px) {
+      height: 2.5rem;
+      width: 2.5rem;
+    }
+  }
+
+  &__item {
+    font-size: 3rem;
+    line-height: 123%;
+
+    @media (max-width: 1340px) {
+      font-size: inherit;
+      line-height: inherit;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 2.3rem;
+    }
+
+    > div {
+      border-radius: 1.5rem;
+    }
+
+    &_expanded {
+      #{$selector}__question .icon {
+        transform: rotate(180deg);
+      }
+
+      #{$selector}__answer {
+        display: block;
+      }
+    }
+  }
+
+  &__answer {
+    background: rgba(255, 255, 255, 0.25);
+
+    @media (max-width: 1340px) {
+      background: rgba(217, 217, 217, 0.15);
+    }
+  }
+}

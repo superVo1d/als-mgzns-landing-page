@@ -1,0 +1,62 @@
+.discounts-block {
+  position: relative;
+  min-height: 71.4rem;
+  width: var(--mgzns-max-container);
+  max-width: 100%;
+  margin: 0 auto;
+  background: url("../../../../public/discounts/discounts_0.png") no-repeat
+    center;
+  background-size: cover;
+
+  @media (max-width: 1340px) {
+    background-image: url("../../../../public/discounts/discounts_0-mob.png");
+    background-size: contain;
+    min-height: unset;
+
+    &::after {
+      content: "";
+      display: block;
+      padding-bottom: 139.2308%;
+      width: 100%;
+    }
+  }
+
+  .button {
+    box-shadow: 0px 37px 38.3px 0px rgba(27, 8, 9, 0.15);
+  }
+
+  &__text {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10.3rem;
+    max-width: 88rem;
+
+    @media (max-width: 1340px) {
+      position: absolute;
+      top: 0;
+      margin-top: 3.8rem;
+    }
+
+    .text-h1 {
+      @media (max-width: 1340px) {
+        font-size: 3.5rem;
+
+        & + p {
+          margin-top: 2.6rem;
+        }
+      }
+    }
+
+    p {
+      max-width: 60rem;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 5rem;
+
+      @media (max-width: 1340px) {
+        max-width: 30rem;
+        margin-bottom: 3.6rem;
+      }
+    }
+  }
+}
